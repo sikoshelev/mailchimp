@@ -1,5 +1,3 @@
-//const API_KEY = 'b71e6267222964bd7b2a6674914ff300-us14'
-
 
 // DEPENDENCIES
 const express = require('express');
@@ -41,11 +39,11 @@ app.post('/', (req, res) => {
 
     const jsonData = JSON.stringify(data);
 
-    const url = 'https://us14.api.mailchimp.com/3.0/lists/49926afc36';
+    const url = 'https://<da>.api.mailchimp.com/3.0/lists/49926afc36';
 
     const options = {
         method: 'POST',
-        auth: 'srgi1:b71e6267222964bd7b2a6674914ff300-us14'
+        auth: 'your API key'
     }
 
     const request = https.request(url, options, function(responce) {
